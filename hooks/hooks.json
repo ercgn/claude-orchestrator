@@ -1,0 +1,15 @@
+{
+  "description": "orchestrator: model-aware orchestrator-mode activation plus mechanical routing guards for the Agent and Workflow tools.",
+  "hooks": {
+    "SessionStart": [
+      { "hooks": [ { "type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks-handlers/session-start.py\"", "timeout": 5 } ] }
+    ],
+    "UserPromptSubmit": [
+      { "hooks": [ { "type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks-handlers/prompt-reminder.py\"", "timeout": 5 } ] }
+    ],
+    "PreToolUse": [
+      { "matcher": "Workflow", "hooks": [ { "type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks-handlers/guard-workflow.py\"", "timeout": 5 } ] },
+      { "matcher": "Agent",    "hooks": [ { "type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks-handlers/guard-agent.py\"", "timeout": 5 } ] }
+    ]
+  }
+}

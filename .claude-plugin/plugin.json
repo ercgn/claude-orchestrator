@@ -1,0 +1,12 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "orchestrator",
+  "version": "4.0.0",
+  "description": "Orchestrator mode for Fable sessions: the /orchestrate skill, nine model-bound role agents, and PreToolUse guards that stop unrouted subagents.",
+  "author": {
+    "name": "Eric Gan"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/ercgn/claude-orchestrator",
+  "keywords": ["orchestration", "subagents", "fable", "hooks"]
+}

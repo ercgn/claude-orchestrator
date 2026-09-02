@@ -1,0 +1,15 @@
+{
+  "name": "claude-orchestrator",
+  "owner": {
+    "name": "Eric Gan"
+  },
+  "description": "Orchestrator mode for Claude Code: the /orchestrate skill, nine model-bound role agents, and PreToolUse guards that stop unrouted subagents.",
+  "plugins": [
+    {
+      "name": "orchestrator",
+      "source": "./",
+      "description": "Orchestrator mode for Fable sessions: the /orchestrate skill, nine model-bound role agents, and PreToolUse guards that stop unrouted subagents.",
+      "version": "4.0.0"
+    }
+  ]
+}
