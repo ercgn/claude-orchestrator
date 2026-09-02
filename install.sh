@@ -74,7 +74,7 @@ case "$SCRIPT_DIR/" in
     echo "This checkout is NOT under $SKILLS_DIR, so Claude Code will not load"
     echo "it automatically. Either clone it there:"
     echo
-    echo "  git clone git@github.com:ercgn/claude-orchestrator.git \"$SKILLS_DIR/orchestrator\""
+    echo "  git clone https://github.com/ercgn/claude-orchestrator.git \"$SKILLS_DIR/orchestrator\""
     echo
     echo "or link this checkout into place yourself:"
     echo

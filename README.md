@@ -66,10 +66,8 @@ or reminder text they inject.
 found under `<config>/skills/*`):
 
 ```bash
-git clone git@github.com:ercgn/claude-orchestrator.git ~/.claude/skills/orchestrator
+git clone https://github.com/ercgn/claude-orchestrator.git ~/.claude/skills/orchestrator
 ```
-
-The repository is private; ask the owner to add you as a collaborator first.
 
 Then run `/reload-plugins` in open sessions, or start a new session.
 
